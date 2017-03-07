@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "C++ STL:vector"
+date:   2017-03-07 10:34:40 +0530
+categories: jekyll update
+---
+
+I recently got the chance to know about the STL(Standard Template Library ).
+Till that moment i  thought that , the only difference about c and c++ is the 
+class keyword and it is object oriented programming , and completely ignore the fact that. There are many useful libraries it also provide that can reduce the 
+repetive work  while doing overloading of functions and data structure (and there function implementations ), here is an example to implement variable size array using vector header file .
+
+
+{% highlight c++ %}
+#include<vector> //header file for std::vector
+...
+int main(){
+vector <int> v; // declaring a vector  : vector <data_type> var_name;
+int k;          //to get the value to be enter into the vector 
+cin>>k;
+v.push_back(k); //push_back() is one of the function to enter the value into vector
+
+cout<<v[0];     //and you can accessed the value inside the variable like in array 
+cout<<V.size()  //as the size of vector can be change it try to keep track of number of element in it , can be helpful while parsing .                
+}
+
+{% endhighlight %} 
+
+[vector][vector-docs] uses some concept of [template][template-docs] .
+
+
+
+[vector-docs]:http://www.cplusplus.com/reference/vector/vector/
+[template-docs]:http://www.cplusplus.com/doc/oldtutorial/templates/
