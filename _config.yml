@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Ankur Jyoti Phukan
-email: leocreed1994@gmail.com
+email: ajphukans@gmail.com
 description: >
-  Developer profile and resume of Ankur Jyoti Phukan, a backend developer.
+  Developer profile and resume of Ankur Jyoti Phukan, a Python software engineer (backend and automation).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ajphukan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ajphukan

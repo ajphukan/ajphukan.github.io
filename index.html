@@ -1,15 +1,14 @@
 ---
 layout: profile
-role: Backend Developer
+role: Python Software Engineer
 ---
 <header class="hero">
   <h1>{{ site.title }}</h1>
-  <p class="role">Backend Developer</p>
-  <!-- TODO: one or two sentences: what you build, what you care about -->
-  <p class="tagline">Backend developer building reliable, well-tested services and APIs. Also shipping Android apps on the side.</p>
+  <p class="role">Python Software Engineer &middot; Backend &amp; Automation</p>
+  <p class="tagline">Senior software engineer building and supporting enterprise automation and backend systems. Based in Assam, India, open to remote opportunities.</p>
   <ul class="links">
     <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/TODO-your-handle/">LinkedIn</a></li> <!-- TODO -->
+    <li><a href="https://www.linkedin.com/in/ankur-jyoti-phukan">LinkedIn</a></li>
     <li><a href="https://stackexchange.com/users/7483788/ankur-jyoti-phukan">Stack Exchange</a></li>
     <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
     <li class="noprint"><a href="javascript:window.print()">Print / save as PDF</a></li>
@@ -18,21 +17,44 @@ role: Backend Developer
 
 <section id="about">
   <h2>About</h2>
-  <!-- TODO: short summary: years of experience, domains, what you're looking for -->
-  <p>TODO: A short paragraph about your backend experience, the kinds of systems you have worked on, and what you are looking for next.</p>
+  <p>Python-focused software engineer with experience in enterprise automation, backend development, platform engineering and production support. I develop and maintain Python automation workflows, troubleshoot production issues and support client deployments. Earlier, I worked on search APIs, Kafka-based messaging, Elasticsearch and microservices. I use AI-assisted development tools (Claude Code and other LLM tools) for implementation, and review all generated code before raising pull requests.</p>
 </section>
 
 <section id="experience">
   <h2>Experience</h2>
-  <!-- TODO: copy this block per role, newest first -->
   <div class="item">
-    <h3>Job title &middot; Company</h3>
-    <div class="meta">Mon YYYY &ndash; Present &middot; Location</div>
+    <h3>Senior Software Engineer &middot; Soroco</h3>
+    <div class="meta">April 2022 &ndash; Present</div>
     <ul>
-      <li>TODO: impact-focused bullet (what you built, scale, result).</li>
-      <li>TODO: another bullet.</li>
+      <li>Develop and maintain Python-based automation solutions and software features supporting enterprise client workflows.</li>
+      <li>Troubleshoot production issues, investigate failures and implement fixes to keep client automations running.</li>
+      <li>Use LLM-based development tools to support implementation, reviewing generated code before raising pull requests.</li>
+      <li>Contribute to platform migration work, adapting automation implementations to changing systems and tooling.</li>
     </ul>
-    <ul class="chips"><li>Java</li><li>PostgreSQL</li><li>AWS</li></ul>
+  </div>
+  <div class="item">
+    <h3>Software Engineer &ndash; SRE &middot; Soroco</h3>
+    <div class="meta">October 2019 &ndash; April 2022</div>
+    <ul>
+      <li>Built and maintained enterprise automation solutions, mainly for web applications and some GUI workflows, using an internal Python automation SDK.</li>
+      <li>Triaged and fixed automation failures caused by upstream UI changes to reduce disruption to client deployments.</li>
+      <li>Handled production support and debugging for client automation deployments.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <h3>Automation Engineer &middot; Rankitright Media (OPC) Private Limited</h3>
+    <div class="meta">April 2019 &ndash; July 2019</div>
+    <ul>
+      <li>Developed Python automation for SEO data collection and repetitive operational tasks.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <h3>Platform Engineer &middot; Aaknet India Pvt. Ltd.</h3>
+    <div class="meta">March 2017 &ndash; March 2018</div>
+    <ul>
+      <li>Developed search APIs for user-facing and internal applications in a microservices architecture.</li>
+      <li>Worked with Kafka for messaging, plus Elasticsearch, Python, Java, Hadoop, Cassandra, AWS, Git and CI/CD.</li>
+    </ul>
   </div>
 </section>
 
@@ -40,40 +62,37 @@ role: Backend Developer
   <h2>Projects</h2>
   <div class="item">
     <h3>GeoProof GPS Camera</h3>
-    <div class="meta">Android app</div>
-    <p>Camera app that stamps photos with location and time. <a href="{{ "/geoproof/privacy/" | relative_url }}">Privacy policy</a></p>
-    <!-- TODO: add Play Store link -->
+    <div class="meta">Android app &middot; in closed testing</div>
+    <p>Camera app that turns every photo into a record of where and when it was captured, built for field work such as site inspections, property and damage documentation, surveys and deliveries. <a href="{{ "/geoproof/privacy/" | relative_url }}">Privacy policy</a></p>
   </div>
   <div class="item">
     <h3>PopOut</h3>
-    <div class="meta">Android app</div>
-    <p>TODO: one-line description. <a href="{{ "/popout/privacy/" | relative_url }}">Privacy policy</a></p>
+    <div class="meta">Android app &middot; in closed testing</div>
+    <p>Turns your phone into an instant-film camera: take a photo and watch it develop on screen with warm color, vignette, grain and a classic white print border. <a href="{{ "/popout/privacy/" | relative_url }}">Privacy policy</a></p>
   </div>
   <div class="item">
     <h3>Ananta Spiritual Companion</h3>
-    <div class="meta">Android app</div>
-    <p>Reading, reflection and practice app that works without an account. <a href="{{ "/ananta-privacy.md" | relative_url }}">Privacy policy</a></p>
+    <div class="meta">Android app &middot; in closed testing</div>
+    <p>A calm, private companion for reading, reflection and practice. Works offline, with no account and no ads, and includes the Bhagavad Gita (all 18 chapters, 701 verses) and the Hanuman Chalisa. <a href="{{ "/ananta-privacy.md" | relative_url }}">Privacy policy</a></p>
   </div>
-  <!-- TODO: add a backend project: repo link, problem, stack -->
 </section>
 
 <section id="skills">
   <h2>Skills</h2>
-  <!-- TODO: trim to what you would happily be interviewed on -->
   <dl class="skills">
-    <dt>Languages</dt><dd>TODO: Java, Kotlin, C++, SQL</dd>
-    <dt>Frameworks &amp; APIs</dt><dd>TODO: Spring Boot, REST, gRPC</dd>
-    <dt>Data</dt><dd>TODO: PostgreSQL, Redis, Kafka</dd>
-    <dt>Cloud &amp; DevOps</dt><dd>TODO: AWS, Docker, CI/CD</dd>
-    <dt>Practices</dt><dd>TODO: testing, observability, code review</dd>
+    <dt>Core</dt><dd>Python, software development, debugging, code review</dd>
+    <dt>Automation</dt><dd>Web automation, Selenium</dd>
+    <dt>Backend &amp; architecture</dt><dd>REST APIs, microservices, event-driven systems, search APIs</dd>
+    <dt>Technologies</dt><dd>Kafka, Elasticsearch, Java, AWS, Hadoop, Cassandra, Git, CI/CD</dd>
+    <dt>AI-assisted development</dt><dd>Claude Code, LLM-assisted implementation, iterative requirement refinement</dd>
   </dl>
 </section>
 
 <section id="education">
   <h2>Education</h2>
   <div class="item">
-    <h3>TODO: Degree &middot; Institution</h3>
-    <div class="meta">YYYY &ndash; YYYY</div>
+    <h3>B.Tech, Computer Science and Engineering &middot; North-Eastern Hill University</h3>
+    <div class="meta">2012 &ndash; 2016</div>
   </div>
 </section>
 
