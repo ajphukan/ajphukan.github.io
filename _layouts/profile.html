@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title | escape }} · {{ page.role | default: "Developer" }}</title>
+  <meta name="description" content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/assets/profile.css" | relative_url }}">
+</head>
+<body>
+  <main class="wrap">
+    {{ content }}
+  </main>
+  <footer class="wrap site-foot">
+    <span>&copy; {{ site.time | date: "%Y" }} {{ site.title | escape }}</span>
+    <span>
+      <a href="{{ "/archive/" | relative_url }}">Blog archive</a>
+    </span>
+  </footer>
+</body>
+</html>

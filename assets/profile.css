@@ -1,0 +1,69 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --line: #d8dee4;
+  --accent: #0b5fff;
+  --chip: #eef2f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #9198a1;
+    --line: #30363d;
+    --accent: #6ea8ff;
+    --chip: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+.hero { padding: 64px 0 24px; }
+.hero h1 { margin: 0; font-size: 2.4rem; line-height: 1.15; }
+.hero .role { margin: 4px 0 12px; font-size: 1.25rem; color: var(--muted); }
+.hero .tagline { margin: 0 0 16px; max-width: 60ch; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 0; margin: 0; list-style: none; }
+
+section { padding: 24px 0; border-top: 1px solid var(--line); }
+section h2 {
+  margin: 0 0 12px;
+  font-size: .85rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.item { margin-bottom: 20px; }
+.item:last-child { margin-bottom: 0; }
+.item h3 { margin: 0; font-size: 1.05rem; }
+.item .meta { color: var(--muted); font-size: .9rem; }
+.item ul { margin: 6px 0 0; padding-left: 20px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 6px 0 0; list-style: none; }
+.chips li { background: var(--chip); border: 1px solid var(--line); border-radius: 999px; padding: 1px 10px; font-size: .85rem; }
+.skills dt { font-weight: 600; margin-top: 10px; }
+.skills dd { margin: 2px 0 0; }
+
+.site-foot { display: flex; justify-content: space-between; padding: 24px 16px 48px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
+
+@media (max-width: 480px) {
+  .hero { padding-top: 40px; }
+  .hero h1 { font-size: 1.9rem; }
+}
+
+@media print {
+  :root { --bg: #fff; --fg: #000; --muted: #444; --line: #bbb; --accent: #000; --chip: #fff; }
+  body { font-size: 11pt; }
+  .hero { padding-top: 0; }
+  section { padding: 12px 0; break-inside: avoid; }
+  .site-foot, .noprint { display: none; }
+  a { text-decoration: none; }
+}
