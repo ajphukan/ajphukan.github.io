@@ -8,7 +8,9 @@
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="{{ "/favicon.svg" | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | relative_url }}">
   
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
