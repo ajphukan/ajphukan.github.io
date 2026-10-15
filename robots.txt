@@ -1,0 +1,3 @@
+# Hello, fellow bot. You are welcome here.
+User-agent: *
+Allow: /

@@ -1,0 +1,13 @@
+---
+layout: default
+title: Hire me
+permalink: /hire/
+---
+<h1>Let's work together</h1>
+<p>{{ site.data.profile.tagline | escape }}</p>
+<ul>
+  {% for l in site.data.profile.links %}
+  <li><a href="{% if l.url contains '://' or l.url contains 'mailto:' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}">{{ l.label | escape }}</a></li>
+  {% endfor %}
+</ul>
+<p><a href="{{ "/" | relative_url }}">See the full profile</a></p>

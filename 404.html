@@ -1,0 +1,12 @@
+---
+layout: default
+title: Page not found
+permalink: /404.html
+---
+<div class="notfound">
+  <p class="notfound-code">{{ site.data.eggs.not_found.heading | default: "404" }}</p>
+  <p class="notfound-line">{{ site.data.eggs.not_found.line | default: "Page not found." }}</p>
+  <p class="notfound-joke" id="egg-404-joke">{{ site.data.eggs.not_found.jokes[0] }}</p>
+  <p class="notfound-joke">{{ site.data.eggs.not_found.tip }}</p>
+  <p><a href="{{ "/" | relative_url }}">Back to the home page</a></p>
+</div>

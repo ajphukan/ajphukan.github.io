@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title | escape }} · {{ page.role | default: "Developer" }}</title>
+  {% assign d = site.data.profile %}
+  <title>{{ site.title | escape }} · {{ d.title_role | default: "Developer" }}</title>
   <meta name="description" content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="{{ site.title | escape }} - {{ page.role | default: "Developer" }}">
-  <meta property="og:description" content="Backend and automation engineer. Open to remote roles.">
+  <meta property="og:title" content="{{ site.title | escape }} - {{ d.title_role | default: "Developer" }}">
+  <meta property="og:description" content="{{ d.preview_description | escape }}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
   <meta property="og:image" content="{{ "/assets/og-image.png" | absolute_url }}">
   <meta name="twitter:card" content="summary_large_image">
@@ -16,7 +17,72 @@
 </head>
 <body>
   {% include theme-toggle.html %}
+  {% include eggs.html %}
+  {% include theme-link.html %}
   <main class="wrap">
+    <header class="hero">
+      <h1>{{ site.title | escape }}</h1>
+      <p class="role">{{ d.role | escape }}</p>
+      <p class="tagline">{{ d.tagline | escape }}</p>
+      <ul class="links">
+        {% for l in d.links %}
+        <li><a href="{% if l.url contains '://' or l.url contains 'mailto:' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}">{{ l.label | escape }}</a></li>
+        {% endfor %}
+      </ul>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <div><p>{{ d.about | escape }}</p></div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div>
+        {% for job in d.experience %}
+        <div class="item">
+          <div class="item-head"><h3>{{ job.title | escape }}</h3><span class="meta">{{ job.dates | escape }}</span></div>
+          <ul>
+            {% for b in job.bullets %}<li>{{ b | escape }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>
+        {% for p in d.projects %}
+        <div class="item">
+          <h3>{{ p.name | escape }}</h3>
+          <div class="meta">{{ p.meta | escape }}</div>
+          <p>{{ p.text | escape }}{% if p.link %} <a href="{% if p.link contains '://' %}{{ p.link }}{% else %}{{ p.link | relative_url }}{% endif %}">{{ p.link_label | default: "Link" | escape }}</a>{% endif %}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        {% for s in d.skills %}<dt>{{ s.label | escape }}</dt><dd>{{ s.value | escape }}</dd>
+        {% endfor %}
+      </dl>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div>
+        {% for e in d.education %}
+        <div class="item">
+          <div class="item-head"><h3>{{ e.title | escape }}</h3><span class="meta">{{ e.dates | escape }}</span></div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
     {{ content }}
   </main>
   <footer class="wrap site-foot">

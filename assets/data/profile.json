@@ -1,0 +1,3 @@
+---
+---
+{"name": {{ site.title | jsonify }}, "email": {{ site.email | jsonify }}, "profile": {{ site.data.profile | jsonify }}}

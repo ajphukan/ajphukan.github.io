@@ -1,0 +1,9 @@
+/* TEAM */
+Developer: Ankur Jyoti Phukan
+Contact: ajphukans@gmail.com
+Location: Assam, India
+
+/* SITE */
+Built with: Jekyll, plain CSS and JavaScript, GitHub Pages
+Fonts: system fonts only
+Trackers: none

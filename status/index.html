@@ -1,0 +1,14 @@
+---
+layout: default
+title: Status
+permalink: /status/
+---
+<h1>Status</h1>
+<p class="status-summary">All systems operational, mostly.</p>
+<dl class="status-list">
+  {% for s in site.data.eggs.status.items %}
+  <dt>{{ s.name | escape }}</dt><dd>{{ s.state | escape }}</dd>
+  {% endfor %}
+</dl>
+<p class="notfound-joke">Last checked {{ site.time | date: "%B %-d, %Y" }}.</p>
+<p><a href="{{ "/" | relative_url }}">Back to the home page</a></p>

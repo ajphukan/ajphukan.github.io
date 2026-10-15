@@ -1,0 +1,88 @@
+# Resume content for the home page. Edit text here; the look lives in the theme
+# (assets/css/theme.css, assets/js/theme.js, _layouts/profile.html, _includes/).
+# Plain text only. Quote any value that contains a colon.
+
+role: Python software engineer, backend and automation
+title_role: Python Software Engineer   # used in the browser tab title
+tagline: I build and support Python automation and backend systems for enterprise clients. Based in Assam, India (IST, UTC+5:30), looking for remote work.
+preview_description: Backend and automation engineer. Open to remote roles.
+
+links:
+  - label: Resume (PDF)
+    url: /assets/Ankur_Jyoti_Phukan_Resume.pdf
+  - label: ajphukans@gmail.com
+    url: mailto:ajphukans@gmail.com
+  - label: GitHub
+    url: https://github.com/ajphukan
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/ankur-jyoti-phukan
+  - label: Stack Exchange
+    url: https://stackexchange.com/users/7483788/ankur-jyoti-phukan
+
+about: I work mostly in Python on enterprise automation and backend systems, including production support for client deployments. Before that I built search APIs in a microservices setup on Kafka and Elasticsearch. I use Claude Code and other LLM tools day to day, and I review everything they write before it goes into a pull request.
+
+experience:
+  - title: Senior Software Engineer, Soroco
+    dates: April 2022 to present
+    bullets:
+      - Upgraded the automation platform across Python versions (3.8 to 3.10, and 3.9 to 3.12/3.13), adapting code and dependencies to each release.
+      - Replaced a custom Selenium SDK wrapper with a lighter plain-Python Selenium wrapper to make web automation easier to maintain.
+      - Diagnosed and fixed runner processes stalling on AWS SQS message handling.
+      - Migrated CI pipelines and a dashboard between internal environments.
+      - Develop and maintain Python automation solutions and software features for enterprise client workflows.
+      - Troubleshoot production issues, investigate failures and fix them so client automations keep running.
+  - title: Software Engineer, SRE, Soroco
+    dates: October 2019 to April 2022
+    bullets:
+      - Built and maintained enterprise automation solutions, mainly for web applications and some GUI workflows, using an internal Python automation SDK.
+      - Triaged and fixed automation failures caused by upstream UI changes to reduce disruption to client deployments.
+      - Handled production support and debugging for client automation deployments.
+  - title: Automation Engineer, Rankitright Media (OPC) Private Limited
+    dates: April 2019 to July 2019
+    bullets:
+      - Developed Python automation for SEO data collection and repetitive operational tasks.
+  - title: Platform Engineer, Aaknet India Pvt. Ltd.
+    dates: March 2017 to March 2018
+    bullets:
+      - Developed search APIs for user-facing and internal applications in a microservices architecture.
+      - Worked with Kafka for messaging, plus Elasticsearch, Python, Java, Hadoop, Cassandra, AWS, Git and CI/CD.
+
+projects:
+  - name: GeoProof GPS Camera
+    meta: Android, in closed testing
+    text: Camera app that turns every photo into a record of where and when it was captured, built for field work such as site inspections, property and damage documentation, surveys and deliveries.
+    link_label: Privacy policy
+    link: /geoproof/privacy/
+  - name: PopOut
+    meta: Android, in closed testing
+    text: "Turns your phone into an instant-film camera: take a photo and watch it develop on screen with warm color, vignette, grain and a classic white print border."
+    link_label: Privacy policy
+    link: /popout/privacy/
+  - name: Ananta Spiritual Companion
+    meta: Android, in closed testing
+    text: A calm, private companion for reading, reflection and practice. Works offline, with no account and no ads, and includes the Bhagavad Gita (all 18 chapters, 701 verses) and the Hanuman Chalisa.
+    link_label: Privacy policy
+    link: /ananta-privacy.md
+  - name: ShadowTyping
+    meta: Website
+    text: Free typing-test website.
+    link_label: shadowtyping.com
+    link: https://shadowtyping.com/
+
+skills:
+  - label: Languages
+    value: Python, Java
+  - label: Automation
+    value: Selenium, web automation
+  - label: Backend
+    value: REST APIs, microservices, event-driven systems, search APIs
+  - label: Data and messaging
+    value: Kafka, Elasticsearch, Hadoop, Cassandra
+  - label: Infrastructure
+    value: AWS, Git, CI/CD
+  - label: AI tools
+    value: Claude Code and other LLM tools
+
+education:
+  - title: B.Tech, Computer Science and Engineering, North-Eastern Hill University
+    dates: 2012 to 2016

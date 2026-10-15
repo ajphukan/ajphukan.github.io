@@ -1,0 +1,109 @@
+# Easter eggs. Nothing here is visible until a visitor does the matching thing.
+# Switch an egg off with `enabled: false`. Triggers are read by assets/js/eggs.js.
+
+console:
+  enabled: true
+  message: "Reading the console? Let's talk."
+  banner: |2
+        _       _
+       / \     | |
+      / _ \ _  | |
+     / ___ \ |_| |
+    /_/   \_\___/
+
+# Hidden HTML comment in the page source. Leave empty to remove it.
+source_comment: "Reading the source? Say hi: ajphukans@gmail.com"
+
+terminal:
+  enabled: true
+  # Open with the Konami code, or with the ` (backtick) key.
+  konami: [ArrowUp, ArrowUp, ArrowDown, ArrowDown, ArrowLeft, ArrowRight, ArrowLeft, ArrowRight, b, a]
+  backquote: true
+  uptime_since: "2017-03"   # used by neofetch
+  footer_taps: 7            # taps on the copyright line (phones)
+  tap_hints: ["Keep going...", "Almost there..."]   # shown a few taps before the terminal opens
+  hints:                    # one is shown per unknown command, in order
+    - "Try 'help'."
+    - "Hint: unix habits work here. Try 'ls -a'."
+    - "Hint: read the manual. Try 'man ajphukan', then 'man easter'."
+    - "Hint: 'tree' shows where things live."
+  man_easter:               # printed by `man easter`
+    - "EASTER(6)                    Portfolio Manual"
+    - ""
+    - "NAME"
+    - "    easter - things that are not on the menu"
+    - ""
+    - "DESCRIPTION"
+    - "    There are several. They hide in four places:"
+    - ""
+    - "    keys      some doors open with the right keys (try 'cat .konami')"
+    - "    shell     this terminal knows more than 'help' says"
+    - "    urls      some pages exist at paths nothing links to (try 'tree')"
+    - "    console   the browser's dev tools have something to say"
+    - ""
+    - "    Curiosity is the only requirement."
+  time_greetings:           # first line when the terminal opens
+    morning: "Good morning."
+    afternoon: "Good afternoon."
+    evening: "Good evening."
+    night: "Burning the midnight oil?"
+  top:                      # shown by the `top` command
+    - { name: "python automation", cpu: "71.0" }
+    - { name: "production support", cpu: "12.4" }
+    - { name: "coffee", cpu: "9.8" }
+    - { name: "documentation", cpu: "4.1" }
+    - { name: "claude-code", cpu: "2.7" }
+  prompt: "guest@ajphukan:~$"
+  greeting: "ajphukan portfolio shell. Type 'help' to see commands, 'exit' to leave."
+
+sudo_hire:
+  enabled: true
+  phrase: sudo hire
+  message: "[sudo] permission granted. Hiring Ankur is now allowed."
+
+zen:
+  enabled: true
+  clicks: 5          # clicks on the name within 2 seconds
+  quotes:
+    - "Simple is better than complex."
+    - "Readability counts."
+    - "Errors should never pass silently."
+    - "In the face of ambiguity, refuse the temptation to guess."
+    - "Now is better than never."
+    - "If the implementation is hard to explain, it's a bad idea."
+
+not_found:
+  heading: "404"
+  line: "No handler is registered for this route."
+  tip: "Tip: press ? on any page for keyboard shortcuts."
+  jokes:
+    - "The page you want is not here. It may have been moved, or it never existed."
+    - "This URL returned nothing, and the error was handled."
+    - "Have you tried checking the spelling and turning it off and on again?"
+    - "Even the best routes fall through to a default handler."
+
+# Extras
+footer_hover: "Hand-built. No cookies, no trackers. Press ? for shortcuts."
+
+theme_flips:
+  count: 5           # theme changes within `seconds`
+  seconds: 20
+  message: "Decisions, decisions..."
+
+shortcuts:           # press g, then the key
+  enabled: true
+  items:
+    - { key: h, label: GitHub, url: "https://github.com/ajphukan" }
+    - { key: l, label: LinkedIn, url: "https://www.linkedin.com/in/ankur-jyoti-phukan" }
+    - { key: s, label: Stack Exchange, url: "https://stackexchange.com/users/7483788/ankur-jyoti-phukan" }
+    - { key: e, label: Email, url: "mailto:ajphukans@gmail.com" }
+    - { key: r, label: Resume, url: "/assets/Ankur_Jyoti_Phukan_Resume.pdf" }
+    - { key: b, label: Blog, url: "/blog/" }
+
+status:                # shown at /status/
+  items:
+    - { name: "Portfolio", state: "Operational" }
+    - { name: "Privacy policies", state: "Operational" }
+    - { name: "Blog", state: "Idle, no new posts" }
+    - { name: "Coffee", state: "Degraded" }
+    - { name: "Remote roles", state: "Open" }
