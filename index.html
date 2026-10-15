@@ -5,13 +5,14 @@ role: Python Software Engineer
 <header class="hero">
   <h1>{{ site.title }}</h1>
   <p class="role">Python Software Engineer &middot; Backend &amp; Automation</p>
-  <p class="tagline">Senior software engineer building and supporting enterprise automation and backend systems. Based in Assam, India, open to remote opportunities.</p>
+  <p class="tagline">Senior software engineer building and supporting enterprise automation and backend systems.</p>
+  <p class="status"><span class="badge">Open to remote roles</span> <span class="loc">Assam, India &middot; IST (UTC+5:30)</span></p>
+  <p class="cta noprint"><a class="btn" href="{{ "/assets/Ankur_Jyoti_Phukan_Resume.pdf" | relative_url }}">Download resume (PDF)</a> <a class="btn ghost" href="mailto:{{ site.email }}">Email me</a></p>
   <ul class="links">
     <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/ankur-jyoti-phukan">LinkedIn</a></li>
     <li><a href="https://stackexchange.com/users/7483788/ankur-jyoti-phukan">Stack Exchange</a></li>
     <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-    <li class="noprint"><a href="{{ "/assets/Ankur_Jyoti_Phukan_Resume.pdf" | relative_url }}">Download resume (PDF)</a></li>
   </ul>
 </header>
 
@@ -20,29 +21,22 @@ role: Python Software Engineer
   <p>Python-focused software engineer with experience in enterprise automation, backend development, platform engineering and production support. I develop and maintain Python automation workflows, troubleshoot production issues and support client deployments. Earlier, I worked on search APIs, Kafka-based messaging, Elasticsearch and microservices. I use AI-assisted development tools (Claude Code and other LLM tools) for implementation, and review all generated code before raising pull requests.</p>
 </section>
 
-<section id="remote">
-  <h2>Remote</h2>
-  <p>Based in Assam, India (IST, UTC+5:30). Looking for remote Python and backend roles.</p>
-</section>
-
 <section id="experience">
   <h2>Experience</h2>
   <div class="item">
-    <h3>Senior Software Engineer &middot; Soroco</h3>
-    <div class="meta">April 2022 &ndash; Present</div>
+    <div class="item-head"><h3>Senior Software Engineer &middot; Soroco</h3><span class="meta">April 2022 &ndash; Present</span></div>
     <ul>
-      <li>Develop and maintain Python-based automation solutions and software features supporting enterprise client workflows.</li>
-      <li>Troubleshoot production issues, investigate failures and implement fixes to keep client automations running.</li>
-      <li>Use LLM-based development tools to support implementation, reviewing generated code before raising pull requests.</li>
       <li>Upgraded the automation platform across Python versions (3.8 to 3.10, and 3.9 to 3.12/3.13), adapting code and dependencies to each release.</li>
       <li>Replaced a custom Selenium SDK wrapper with a lighter plain-Python Selenium wrapper to make web automation easier to maintain.</li>
       <li>Diagnosed and fixed runner processes stalling on AWS SQS message handling.</li>
       <li>Migrated CI pipelines and a dashboard between internal environments.</li>
+      <li>Develop and maintain Python-based automation solutions and software features supporting enterprise client workflows.</li>
+      <li>Troubleshoot production issues, investigate failures and implement fixes to keep client automations running.</li>
+      <li>Use LLM-based development tools to support implementation, reviewing generated code before raising pull requests.</li>
     </ul>
   </div>
   <div class="item">
-    <h3>Software Engineer &ndash; SRE &middot; Soroco</h3>
-    <div class="meta">October 2019 &ndash; April 2022</div>
+    <div class="item-head"><h3>Software Engineer &ndash; SRE &middot; Soroco</h3><span class="meta">October 2019 &ndash; April 2022</span></div>
     <ul>
       <li>Built and maintained enterprise automation solutions, mainly for web applications and some GUI workflows, using an internal Python automation SDK.</li>
       <li>Triaged and fixed automation failures caused by upstream UI changes to reduce disruption to client deployments.</li>
@@ -50,15 +44,13 @@ role: Python Software Engineer
     </ul>
   </div>
   <div class="item">
-    <h3>Automation Engineer &middot; Rankitright Media (OPC) Private Limited</h3>
-    <div class="meta">April 2019 &ndash; July 2019</div>
+    <div class="item-head"><h3>Automation Engineer &middot; Rankitright Media (OPC) Private Limited</h3><span class="meta">April 2019 &ndash; July 2019</span></div>
     <ul>
       <li>Developed Python automation for SEO data collection and repetitive operational tasks.</li>
     </ul>
   </div>
   <div class="item">
-    <h3>Platform Engineer &middot; Aaknet India Pvt. Ltd.</h3>
-    <div class="meta">March 2017 &ndash; March 2018</div>
+    <div class="item-head"><h3>Platform Engineer &middot; Aaknet India Pvt. Ltd.</h3><span class="meta">March 2017 &ndash; March 2018</span></div>
     <ul>
       <li>Developed search APIs for user-facing and internal applications in a microservices architecture.</li>
       <li>Worked with Kafka for messaging, plus Elasticsearch, Python, Java, Hadoop, Cassandra, AWS, Git and CI/CD.</li>
@@ -68,25 +60,27 @@ role: Python Software Engineer
 
 <section id="projects">
   <h2>Projects</h2>
-  <div class="item">
+  <div class="cards">
+  <div class="card">
     <h3>GeoProof GPS Camera</h3>
-    <div class="meta">Android app &middot; in closed testing</div>
+    <div class="meta">Android app &middot; <span class="badge soft">Closed testing</span></div>
     <p>Camera app that turns every photo into a record of where and when it was captured, built for field work such as site inspections, property and damage documentation, surveys and deliveries. <a href="{{ "/geoproof/privacy/" | relative_url }}">Privacy policy</a></p>
   </div>
-  <div class="item">
+  <div class="card">
     <h3>PopOut</h3>
-    <div class="meta">Android app &middot; in closed testing</div>
+    <div class="meta">Android app &middot; <span class="badge soft">Closed testing</span></div>
     <p>Turns your phone into an instant-film camera: take a photo and watch it develop on screen with warm color, vignette, grain and a classic white print border. <a href="{{ "/popout/privacy/" | relative_url }}">Privacy policy</a></p>
   </div>
-  <div class="item">
+  <div class="card">
     <h3>Ananta Spiritual Companion</h3>
-    <div class="meta">Android app &middot; in closed testing</div>
+    <div class="meta">Android app &middot; <span class="badge soft">Closed testing</span></div>
     <p>A calm, private companion for reading, reflection and practice. Works offline, with no account and no ads, and includes the Bhagavad Gita (all 18 chapters, 701 verses) and the Hanuman Chalisa. <a href="{{ "/ananta-privacy.md" | relative_url }}">Privacy policy</a></p>
   </div>
-  <div class="item">
+  <div class="card">
     <h3>ShadowTyping</h3>
     <div class="meta">Website</div>
     <p>Free typing-test website. <a href="https://shadowtyping.com/">shadowtyping.com</a></p>
+  </div>
   </div>
 </section>
 
@@ -104,8 +98,7 @@ role: Python Software Engineer
 <section id="education">
   <h2>Education</h2>
   <div class="item">
-    <h3>B.Tech, Computer Science and Engineering &middot; North-Eastern Hill University</h3>
-    <div class="meta">2012 &ndash; 2016</div>
+    <div class="item-head"><h3>B.Tech, Computer Science and Engineering &middot; North-Eastern Hill University</h3><span class="meta">2012 &ndash; 2016</span></div>
   </div>
 </section>
 

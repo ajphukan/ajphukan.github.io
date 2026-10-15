@@ -12,19 +12,17 @@
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
   <meta property="og:image" content="{{ "/assets/og-image.png" | absolute_url }}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" sizes="any">
-  <link rel="icon" type="image/svg+xml" href="{{ "/favicon.svg" | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/profile.css" | relative_url }}">
+  {% include theme-head.html %}
 </head>
 <body>
+  {% include theme-toggle.html %}
   <main class="wrap">
     {{ content }}
   </main>
   <footer class="wrap site-foot">
     <span>&copy; {{ site.time | date: "%Y" }} {{ site.title | escape }}</span>
     <span>
-      <a href="{{ "/archive/" | relative_url }}">Blog archive</a>
+      <a href="{{ "/blog/" | relative_url }}">Blog</a>
     </span>
   </footer>
 </body>

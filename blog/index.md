@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Blog Archive
-permalink: /archive/
+title: Blog
+permalink: /blog/
 ---
-
-Older posts from when this site was a blog. No longer updated.
 
 <ul class="post-list">
   {% for post in site.posts %}

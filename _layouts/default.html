@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {% include head.html %}
-
-  <body>
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    {% include footer.html %}
-
-  </body>
-
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  {% include theme-head.html %}
+</head>
+<body>
+  {% include theme-toggle.html %}
+  <nav class="wrap topnav" aria-label="Site">
+    <a class="brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <span>
+      <a href="{{ "/" | relative_url }}">Home</a>
+    </span>
+  </nav>
+  <main class="wrap doc-main">
+    {{ content }}
+  </main>
+  <footer class="wrap site-foot">
+    <span>&copy; {{ site.time | date: "%Y" }} {{ site.title | escape }}</span>
+    <span><a href="{{ "/" | relative_url }}">Profile</a> &middot; <a href="{{ "/blog/" | relative_url }}">Blog</a></span>
+  </footer>
+</body>
 </html>
