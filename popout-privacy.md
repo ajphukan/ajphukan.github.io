@@ -4,7 +4,7 @@ title: PopOut Privacy Policy
 permalink: /popout/privacy/
 ---
 
-**Effective date:** 22-09-2026
+**Effective date:** 22-09-2026 (last updated 16-10-2026)
 
 This document is written to be hosted at a public URL (see the front matter
 above — it's written as a GitHub Pages/Jekyll page, the same pattern used
@@ -39,7 +39,8 @@ you control exactly where that copy goes.
 
 **Photo metadata.** A local, on-device database records details about
 your own photos — capture date, which film look/border was applied,
-favorites, and album membership — so the app can show your scrapbook,
+favorites, album membership, and any short note you write on the back of a
+print — so the app can show your scrapbook,
 filter it, and let you re-edit a print later. This database is never sent
 anywhere; it exists only to make the app work.
 
@@ -57,14 +58,24 @@ Android.
 - No analytics, crash reporting, or usage tracking.
 - No advertising, and no data shared with advertisers or any other third
   party.
-- No location access or location stamping of any kind.
+- No location access or location stamping of any kind. When you import a photo, PopOut reads only the date it was taken; its location is never read or stored, and the original photo is never changed.
 - No internet access is used for anything described above — PopOut's
   camera, editing, and scrapbook features all work fully offline.
+
+## Sharing, contact sheets and feedback
+
+When you share a print (including the "on a table" pictures), PopOut hands
+the picture to Android's share sheet through a temporary file in its own
+cache; where it goes after that is up to the app you choose. A contact sheet
+PDF is saved only to the location you pick. "Rate" opens PopOut's page in
+the Play Store app, and "Send feedback" opens your own email app with a
+pre-addressed message — nothing is sent unless you send it, and PopOut adds
+nothing to it beyond the app version, phone model and Android version, which you can see and delete before sending.
 
 ## Backup files
 
 Settings includes an optional "Backup & Restore" feature that exports your
-whole scrapbook (photos, edits, favorites, and albums) to a single file,
+whole scrapbook (photos, edits, favorites, albums, and notes) to a single file,
 encrypted (AES-256-GCM) with a passphrase only you know. This file is
 created only when you explicitly choose to create one, is saved only to a
 location you pick yourself, and is never transmitted anywhere by PopOut —
@@ -101,7 +112,7 @@ on your behalf.
 |---|---|
 | Camera | To take the photo you're capturing. |
 | Storage (read/write, Android 9 and below only) | To save prints to, and read them back from, `Pictures/PopOut`. Not requested on Android 10+, which needs no permission for an app to manage its own gallery files. |
-| Notifications (Android 13+) | Only if you turn on the optional "Reminders" setting (off by default), for a single local reminder if you haven't taken a photo in a while. Nothing is sent over the network. |
+| Notifications (Android 13+) | Only if you turn on the optional "Reminders" setting (off by default): a local reminder if you haven't taken a photo in a while and, if you also turn on "One print a day", an evening nudge on days with no print yet. Both are created on your device; nothing is sent over the network. |
 | Biometric | Only used if you turn on the optional Locked Album feature — see "Biometric confirmation" above. |
 
 ## Children's privacy
