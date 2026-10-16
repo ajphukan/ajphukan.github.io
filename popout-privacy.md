@@ -75,7 +75,7 @@ nothing to it beyond the app version, phone model and Android version, which you
 ## Backup files
 
 Settings includes an optional "Backup & Restore" feature that exports your
-whole scrapbook (photos, edits, favorites, albums, and notes) to a single file,
+whole scrapbook (photos, edits, favorites, albums, notes, your own backgrounds, stickers, looks and borders, and your camera settings) to a single file,
 encrypted (AES-256-GCM) with a passphrase only you know. This file is
 created only when you explicitly choose to create one, is saved only to a
 location you pick yourself, and is never transmitted anywhere by PopOut —
