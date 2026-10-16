@@ -37,7 +37,8 @@ times, and whether it appears on the lock screen. You can turn it off at any tim
 
 If you choose "Set today's verse as lock screen", the app creates a picture of the verse on your phone and sets it as
 your lock screen wallpaper through Android. Before the first change, the app keeps a copy of your previous lock screen
-picture inside the app, on your phone, so it can put it back when you turn the feature off. Nothing leaves your phone.
+picture inside the app, on your phone, if your phone allows it or if you pick one for it to keep, so it can put it back
+when you turn the feature off. Otherwise it opens your phone's own wallpaper chooser. Nothing leaves your phone.
 
 ## Permissions the app asks for
 
@@ -65,5 +66,5 @@ If this policy changes, the new version will be posted at the same address with 
 
 ## Content
 
-The Sanskrit texts are in the public domain. Hindi, Hinglish and English translations in the app are drafted with the
+The Sanskrit texts are in the public domain. Hindi, Hinglish, English, Assamese, Marathi, Bengali, Gujarati, Tamil and Telugu translations in the app are drafted with the
 help of AI and are marked in the app as AI drafts until a human reviewer has checked them.
