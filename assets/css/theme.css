@@ -58,8 +58,8 @@ a:focus-visible, .theme-link:focus-visible { outline: 2px solid var(--accent); o
 
 .hero { padding: 72px 0 36px; }
 .hero h1 { margin: 0; font-size: 2.2rem; line-height: 1.15; font-weight: 700; }
-.hero .role { margin: 4px 0 16px; color: var(--muted); }
-.hero .tagline { margin: 0 0 16px; max-width: 54ch; }
+.hero .role { margin: 6px 0 20px; color: var(--muted); font-size: 1.05rem; }
+.hero .tagline { margin: 0 0 20px; max-width: 64ch; }
 .links { display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 0; margin: 0; list-style: none; }
 
 section { display: grid; grid-template-columns: 140px 1fr; gap: 0 32px; padding: 28px 0; border-top: 1px solid var(--line); }
