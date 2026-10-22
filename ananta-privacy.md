@@ -55,6 +55,10 @@ The app shows no advertisements and contains no advertising or analytics softwar
 
 Ananta is intended for users aged 13 and over. It is not directed at children under 13 and does not knowingly collect any personal data from anyone.
 
+## Reading aloud
+
+If you tap the speaker in the reader, Ananta asks your phone's own text-to-speech engine (for example Google or Samsung speech services) to read the verse. Ananta sends nothing itself. While it reads, Ananta shows a small notification with Previous, Pause and Next buttons so reading can carry on with the screen off; it appears only on your phone and nothing about it leaves your phone. The text is handled by the speech engine you have chosen in your phone settings, under that engine's own policy; with an installed voice it works offline. Your speed, pitch and voice choice are kept on your phone only.
+
 ## Your choices
 
 You can delete everything the app keeps by clearing its data in your phone settings or by uninstalling it. Because
